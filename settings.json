@@ -1,0 +1,575 @@
+{
+  "window.restoreWindows": "one", // 起動時に前回開いていたワークスペースを開く
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}", // フルパス表示
+  "window.closeWhenEmpty": false, // 最後のエディタを閉じたとき、ウィンドウは閉じない（フォルダを表示していないウィンドウのみ）
+  "debug.console.fontSize": 12, // コンソール文字サイズ
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // サジェスト一覧の初期表示項目設定
+  "breadcrumbs.enabled": true, // ファイルパンくず表示
+  "vsicons.dontShowNewVersionMessage": true, // CodeLens を非表示
+  "editor.wordWrap": "on", // 右端で折り返す
+  "editor.tabSize": 2, // タブ
+  "editor.acceptSuggestionOnEnter": "off", // Enterでサジェストしない
+  "editor.acceptSuggestionOnCommitCharacter": false, // spaceや()でサジェストしない
+  // "editor.lineHeight": 28, // 行の高さ
+  "editor.detectIndentation": true, // ファイルに基いてインデント、タブを変更する（tabSizeとinsertSpacesの設定は無効になる）
+  "editor.renderLineHighlight": "all", // フォント
+  "editor.glyphMargin": true, // 行の左端に余白を作る
+  "editor.roundedSelection": true, // 選択範囲の角を丸める
+  "editor.quickSuggestions": {
+    // 補完候補の自動表示
+    "comments": false, // コメント内では無効
+    "strings": true, // 文字列内では有効
+    "other": true //  その他の場所で有効
+  },
+  "editor.formatOnType": true, // コード整形
+  "editor.formatOnPaste": true, // コード整形
+  // "editor.rulers": [100], // 右端のルーラー位置
+  "editor.folding": true, // コードの折りたたみを許可
+  // "editor.letterSpacing": -1, // 文字の間隔を詰める
+  "editor.lineNumbers": "on", // 行番号の表示
+  "editor.minimap.enabled": false, // ミニマップの表示
+  // "editor.minimap.maxColumn": 40, // ミニマップの幅
+  "editor.scrollBeyondLastLine": true, // 最終行よりも下へのスクロールを許可 or 許可しない
+  "editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?", // 文字の区切り（初期値 => "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?"）
+  "editor.renderControlCharacters": true, // 制御文字の表示
+  // "editor.renderWhitespace": "boundary", // 連続した空白文字を可視化
+  // "editor.insertSpaces": true, // Tabキーで半角スペースを入力
+  "editor.fontSize": 12,
+  // "editor.minimap.renderCharacters": false, // ミニマップを簡略化
+  // "editor.minimap.showSlider": "always", // ミニマップのハイライトを常に表示
+  // "editor.minimap.side": "right", // ミニマップを右に表示
+  // "editor.autoIndent":"keep", // オートインデント
+  "editor.cursorStyle": "line", // カーソルの形状
+  "editor.cursorBlinking": "smooth", // カーソルの表示形式
+  // "editor.cursorWidth": 5, // カーソル幅
+  "editor.emptySelectionClipboard": true, // 選択範囲無しでのコピーを許可
+  "editor.links": true, // リンクをクリック可能に
+  "editor.matchBrackets": "never", // 対応する括弧の強調表示をオンに
+  "editor.mouseWheelScrollSensitivity": 2, // マウスホイール回転の移動係数
+  "editor.mouseWheelZoom": true, // Ctrl+マウスホイールによるズームを有効化
+  "editor.suggestFontSize": 12, // サジェストの文字サイズ
+  "editor.suggestLineHeight": 16, // サジェスト欄の行の高さ
+  "editor.suggestSelection": "first", //候補リストを表示するとき、常に最初の候補を選択
+  "cSpell.autoFormatConfigFile": true, // Code Spell Checker -> コード内の一般的なスペルミスを検出できる
+  "cSpell.blockCheckingWhenAverageChunkSizeGreaterThan": 100,
+  "editor.renderWhitespace": "all", // ドキュメントの空白文字を可視化
+  "editor.guides.indentation": true,
+
+  /* ターミナル設定 */
+  // The path of the shell that the terminal uses on OS X.
+  "terminal.integrated.shell.osx": "/bin/zsh", // zsh Shell
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.inheritEnv": false, // VSCodeのターミナルで異なるPythonが立ち上がるのを防ぐ
+
+  /* エクスプローラー設定 */
+  "files.insertFinalNewline": true, // 保存時に末尾を空行にする
+  "files.trimFinalNewlines": true, // 保存時に最終行以降を削除
+  "files.trimTrailingWhitespace": true, // 保存時に行末のホワイトスペースを削除
+  "files.autoGuessEncoding": true, // 文字コードを自動判別
+  "files.useExperimentalFileWatcher": true,
+  "files.associations": {
+    // ファイルと言語の関連付けを変更
+    "*.tag": "html",
+    "*.css": "css"
+    // "*.php4": "php",
+    // "*.php5": "php",
+    // "**/somefolder/*.*": "php",
+    // "*.es.json": "es",
+    // "*.hive.sql": "hive-sql",
+  },
+  "files.exclude": {
+    // エクスプローラーから除外するファイルとフォルダ
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/bin": true,
+    // "**/*.exe": true,
+    "**/*.o": true,
+    "**/*.obj": true,
+    "**/*.ilk": true,
+    "**/*.pdb": true,
+    "**/*.tlog": true,
+    "**/*.idb": true,
+    "**/*.dll": true
+    // "**/node_modules": true,
+    // "**/node_modules/": true
+    // "**.vs": true,
+  },
+  "search.exclude": {
+    // ファイルブラウザには表示するが、検索から除外する
+    "**/node_modules": true,
+    "**/bower_components": true,
+    // 例えばキャッシュディレクトリを追加すると、検索で余計なファイルが出てこなくて便利
+    "**/tmp/cache": true
+  },
+  "files.watcherExclude": {
+    // ファイル モニタリングから除外するファイル パスの glob パターンを構成します
+    // この設定を変更すると、再起動が必要になります
+    // 始動時に Code が消費する CPU 時間が多い場合は、大規模なフォルダを除外して初期ロードを減らせます
+    "**/.git/objects/**": true,
+    "**/node_modules/": true
+  },
+
+  /* ワークベンチ設定 */
+  "workbench.startupEditor": "newUntitledFile", // 起動時ページを空白のページにする
+  "workbench.editor.showTabs": true, // タブを表示
+  // "workbench.activityBar.visible": false, // アクティビティバー(左端)を非表示に
+  "workbench.editor.tabSizing": "shrink", // ステータスバー(下端)を表示
+  "workbench.sideBar.location": "left", // カラーテーマ
+  "workbench.colorTheme": "Iceberg",
+  "workbench.preferredLightColorTheme": "Iceberg",
+  "workbench.preferredDarkColorTheme": "Iceberg",
+  "workbench.preferredHighContrastColorTheme": "Iceberg",
+  "workbench.preferredHighContrastLightColorTheme": "Iceberg",
+  "workbench.iconTheme": "material-icon-theme", // アイコンの適用
+
+  /* vscode カスタマイズ */
+  // "workbench.colorCustomizations": {
+  //   // カラーテーマに上書きする個別の設定
+  //   "statusBar.background": "#333333", // ステータスバー背景色
+  //   "statusBar.noFolderBackground": "#333333", // フォルダが開いていないときのステータスバー背景色
+  //   "statusBar.foreground": "#00e8dc", // ステータスバー前景色
+  //   "statusBar.noFolderForeground": "#00e8dc", // フォルダが開いていないときのステータスバー前景色
+  //   "statusBar.border": "#00e8dc", // ステータスバーの境界線
+  //   // "sideBar.background": "#333333", // サイドバーの背景色
+  //   // "sideBar.foreground": "#00e8dc", // サイドバーの前景色
+  //   "sideBarSectionHeader.foreground": "#00e8dc", // サイドバーのセクションヘッダーの前景色
+  //   "sideBar.border": "#00e8dc", // サイドバーの境界線
+  //   "list.activeSelectionForeground": "#00e8dc", // ツリーリストがアクティブのとき、選択された項目のツリーリスト前景色
+  //   "list.focusForeground": "#00e8dc", // ツリーリストがアクティブのとき、フォーカスされた項目のツリーリスト前景色
+  //   "list.hoverForeground": "#00e8dc", // マウス操作で項目をホバーするときのツリーリスト前景色
+  //   "button.foreground": "#00e8dc", // ボタンの前景色
+  //   // "activityBar.background": "#333333", // アクティビティバーの背景色
+  //   "activityBar.foreground": "#00e8dc", // アクティビティバーの前景色
+  //   "activityBar.border": "#00e8dc", // アクティビティバーの境界線
+  //   "activityBarBadge.background": "#00e8dc", // アクティビティ通知バッジの背景色
+  //   "activityBarBadge.foreground": "#333333", // アクティビティ通知バッジの前景色
+  //   "editor.lineHighlightBackground": "#333333", // 選択している行の強調色
+  //   "scrollbarSlider.background": "#00e8dc", // スクロールバーの色
+  //   "scrollbarSlider.hoverBackground": "#00ccffcc", // 移動中のスクロールバーの色
+  //   "scrollbar.shadow": "#00e8dc", // スクロールの影
+  //   "tab.activeBorder": "#00e8dc", // アクティブタブの境界線
+  //   "tab.activeForeground": "#00e8dc", // アクティブタブの前景色
+  //   "tab.hoverForeground": "#00e8dc", // カーソルを置いた時のタブの前景色
+  //   // "editorSuggestWidget.selectedBackground": "#00e8dc", // サジェスト欄、選択中項目の背景色
+  //   "editorLineNumber.activeForeground": "#00e8dc", // エディタのアクティブ行番号
+  //   "panel.border": "#00e8dc", // パネル ボーダーの境界線
+  //   "panelTitle.activeBorder": "#00e8dc", // アクティブパネルのタイトルの境界線
+  //   "panelTitle.activeForeground": "#00e8dc", // アクティブパネルのタイトルの文字色
+  //   "editorGroup.border": "#00e8dc" // 複数のエディターグループを分離する境界線
+  // },
+
+  /* Vim */
+  // "vim.hlsearch": true,
+  // "vim.useSystemClipboard": true,
+  // "vim.easymotion": true,
+  // "vim.incsearch": true,
+  // "vim.useCtrlKeys": true,
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["j", "j"],
+  //     "after": ["<Esc>", "l"]
+  //   }
+  // ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<leader>", "d"],
+  //     "after": ["d", "d"]
+  //   },
+  //   {
+  //     "before": ["<C-n>"],
+  //     "commands": [":nohl"]
+  //   },
+  //   {
+  //     "before": ["K"],
+  //     "commands": ["lineBreakInsert"],
+  //     "silent": true
+  //   }
+  // ],
+  // "vim.leader": "<space>",
+  // "vim.handleKeys": {
+  //   "<C-a>": false,
+  //   "<C-f>": false
+  // },
+
+  /* Neovim */
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim", // macos
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/shee/.config/nvim/init.vim", // macos
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim", // linux
+  "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.vim", // linux
+  "vscode-neovim.useWSL": true, // WSLを使用する
+  "workbench.list.automaticKeyboardNavigation": false, // ファイルツリーの操作をvimのキーバインドで行う
+
+  /* git */
+  "git.autofetch": true,
+
+  /* Emmet */
+  // "editor.snippetSuggestions": "top", // Emmetのスニペット候補を優先表示
+  "emmet.showSuggestionsAsSnippets": true, // Emmetの候補を表示
+  "emmet.triggerExpansionOnTab": true, // TABキーでEmmet展開
+  "emmet.showExpandedAbbreviation": "always", // 常にEmmetを表示する
+  "emmet.showAbbreviationSuggestions": true, // Emmetの候補を表示する
+  "emmet.variables": {
+    // Emmet展開のHTML言語変更
+    "lang": "ja"
+  },
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "django-html": "html"
+  },
+  "emmet.excludeLanguages": [
+    // Emmetを発動しないファイル
+    "markdown",
+    "json"
+  ],
+
+  /* ESlint Stylelint Prettier */
+  "npm.enableScriptExplorer": true, // 最上位の 'package.json' ファイルがない場合は、npm スクリプトのエクスプローラー ビューを有効にする
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // prettierを優先する
+  "prettier.printWidth": 100, // printWidthの設定
+  "editor.formatOnSave": true, // 既定の JavaScript フォーマッタを無効にする
+  "stylelint.autoFixOnSave": true, // 保存時の自動修正をオンにする
+  "eslint.nodePath": "./node_modules/eslint", // eslint.nodePath を設定する
+  "eslint.packageManager": "yarn", // yarnを使う
+  "editor.codeActionsOnSave": {
+    // 保存時に実行されるコードアクションの種類
+    "source.addMissingImports": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.alwaysShowStatus": true, // ESlintステータスバー項目を常に表示する
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+
+  /* kubernetes */
+  "redhat.telemetry.enabled": true,
+
+  /* 42Tokyo */
+  "42header.username": "kymatsud",
+  "42header.email": "kymatsud@student.42tokyo.jp",
+  "norminette.fileregex": "^ft.*\\.[ch]$",
+  "42norminette.command": "norminette", // Default: 'norminette'.
+  "42norminette.showErrors": "all", // Default: 'all'. ['all', 'one']
+  "42norminette.trace.server": "messages", // Default: 'messages'. ['messages', 'off', 'verbose']
+
+  // ===================
+  // extensions settings
+  // ===================
+
+  "extensions.autoUpdate": true, // 自動更新
+  "extensions.ignoreRecommendations": true, // 推奨事項の通知を OFF
+  "importSorter.generalConfiguration.sortOnBeforeSave": true, // ファイル保存時に自動的ソートする
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "liveSassCompile.settings.formats": [
+    // エクスポートしたCSSスタイル、フォーマット、保存場所を設定
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path.mac": "/Users/shee/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.helm-path.mac": "/Users/shee/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.draft-path.mac": "/Users/shee/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+    "vscode-kubernetes.minikube-path.mac": "/Users/shee/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  "vscode-pets.theme": "forest", // vscode petsのテーマ
+  "vscode-pets.petColor": "white", // vscode petsのペットカラー
+  "backgroundCover.imagePath": "/Users/shee/Pictures/cyber2.png", // vscodeの背景設定
+
+  // ===========================
+  // language specified settings
+  // ===========================
+
+  // =========== C =============
+  "[c]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+    // "editor.defaultFormatter": "keyhr.42-c-format" // 42専用フォーマット
+  },
+  "code-runner.runInTerminal": true,
+
+  // =========== C++ ===========
+  "[cpp]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+    // "editor.defaultFormatter": "keyhr.42-c-format" // 42専用フォーマット
+  },
+
+  // ========== JSON ===========
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ========== HTML ===========
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "html.format.extraLiners": "", // <head>,<body>,</html>タグ前に空行を入れない
+  // "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // フォーマットしない要素を指定
+  "html.format.unformatted": null, // インライン要素をフォーマットしない
+  "html-css-class-completion.enableEmmetSupport": true,
+  "liveServer.settings.donotShowInfoMsg": true, //  起動時、HTMLファイル上にタグがない場合のエラーメッセージを非表示にする
+
+  // ========== CSS ============
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+
+  // ========== SCSS ===========
+  "[scss]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======== POSTCSS ==========
+  "[postcss]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "gitlens.codeLens.scopes": ["document"]
+  },
+
+  // ======= JavaScript ========
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // ==== JavaScriptReact ======
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======= TypeScript ========
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.validate.enable": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // ==== TypeScriptReact ======
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ========== Vue ===========
+  "[vue]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======== Angular =========
+  "[angular]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======== Svelte ==========
+  "[svelte]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "svelte.plugin.svelte.note-new-transformation": false,
+
+  // ========== Go ============
+  "go.formatTool": "gofmt",
+  "[go]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+  },
+
+  // ======== Python ==========
+  "[python]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "python.defaultInterpreterPath": "~/.asdf/installs/python/3.9.13/bin/python",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "119"],
+  "python.linting.lintOnSave": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.analysis.typeCheckingMode": "off",
+  "python.linting.mypyCategorySeverity.error": "Information",
+  "python.linting.mypyArgs": [
+    "--warn-return-any",
+    "--no-implicit-optional",
+    "--disallow-untyped-calls",
+    "--disallow-untyped-defs",
+    "--ignore-missing-imports",
+    "--follow-imports=skip"
+  ],
+  "python.linting.flake8CategorySeverity.E": "Warning",
+  "python.linting.flake8CategorySeverity.F": "Warning",
+  "python.terminal.activateEnvironment": false,
+
+  // =========== R ============
+  "[r]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ========== Ruby ==========
+  "[ruby]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ========== Java ==========
+  "[java]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ========== PHP ===========
+  "[php]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======-== Swift =======-==
+  "[swift]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ========== SQL ===========
+  "[sql]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======== Jupyter =========
+  "[jupyter]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ====== Dockerfile ========
+  "[dockerfile]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // ======= Markdown =========
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": false
+  },
+
+  // ======== Solidity ========
+  "[solidity]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "hardhat.telemetry": true,
+
+  // ========== Dart ==========
+  "[dart]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.closingLabels": false
+  },
+  "dart.enableSdkFormatter": false,
+
+  // ========== Rust ==========
+  "[rust]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  // ########## add ###########
+  "[add]": {},
+  "diffEditor.maxComputationTime": 0,
+  "rapidapi.terminalLink.enabled": true,
+  "settingsSync.ignoredSettings": [
+    "-python.experiments.enabled",
+    "-python.experiments.optInto",
+    "-python.experiments.optOutFrom",
+    "-python.formatting.blackPath",
+    "-python.defaultInterpreterPath"
+  ],
+  "eslint.format.enable": true,
+  "editor.largeFileOptimizations": false,
+  "git.suggestSmartCommit": false,
+  "svelte.enable-ts-plugin": true,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false
+  },
+  "editor.accessibilitySupport": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.zoomLevel": 1,
+  "solidity.telemetry": true,
+  "git.confirmSync": false,
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.diffLineInserted": "off",
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasError": "off",
+  "audioCues.diffLineModified": "off",
+  "audioCues.lineHasFoldedArea": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "audioCues.noInlayHints": "off",
+  "audioCues.notebookCellCompleted": "off",
+  "audioCues.notebookCellFailed": "off",
+  "audioCues.onDebugBreak": "off",
+  "audioCues.taskCompleted": "off",
+  "audioCues.taskFailed": "off",
+  "audioCues.terminalCommandFailed": "off",
+  "audioCues.terminalQuickFix": "off",
+  "rapidapi.ssl.verification": true,
+  "terminal.integrated.copyOnSelection": true,
+  "remote.SSH.remotePlatform": {
+    "ec2-54-199-163-128.ap-northeast-1.compute.amazonaws.com": "linux"
+  },
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "git.ignoreRebaseWarning": true,
+  "go.toolsManagement.autoUpdate": true
+}
