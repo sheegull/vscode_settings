@@ -1,0 +1,91 @@
+// Place your key bindings in this file to override the defaults
+[
+  // {
+  //   "key": "shift+enter",
+  //   "command": "python.execInTerminal"
+  // },
+  // {
+  //   "key": "shift+enter",
+  //   "command": "-python.execSelectionInTerminal",
+  //   "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  // },
+  // {
+  //   "key": "cmd+enter",
+  //   "command": "jupyter.execSelectionInteractive",
+  //   "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  // },
+  // {
+  //   "key": "shift+enter",
+  //   "command": "-jupyter.execSelectionInteractive",
+  //   "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  // },
+  // nvim //
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
+    "key": "space d",
+    "command": "editor.action.goToDeclaration",
+    "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "key": "space b",
+    "command": "workbench.action.navigateBack",
+    "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "key": "space h",
+    "command": "editor.action.showHover",
+    "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "key": "space s",
+    "command": "workbench.action.files.save",
+    "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "key": "ctrl+m a",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+m f",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+m r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f2",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+m d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+delete",
+    "command": "-deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  }
+
+  // errorが起きてしまうためコメントアウト neovim用
+  // close tab
+  // { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
+  // select all
+  // { "key": "ctrl+a", "command": "editor.action.selectAll" },
+  // select word
+  // { "key": "ctrl+d", "command": "editor.action.addSelectionToNextFindMatch" },
+  // toggle terminal
+  // { "key": "ctrl+j", "command": "workbench.action.terminal.toggleTerminal" },
+  // copy
+  // { "key": "ctrl+c", "command": "editor.action.clipboardCopyAction" },
+  // paste
+  // { "key": "ctrl+v", "command": "editor.action.clipboardPasteAction" }
+]
